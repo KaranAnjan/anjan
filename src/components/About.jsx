@@ -70,7 +70,7 @@ const About = () => {
             </div>
             <div className="about-info-item">
               <span>Location</span>
-              <p>Kollkata, India</p>
+              <p>Kolkata, India</p>
             </div>
           </div>
 
