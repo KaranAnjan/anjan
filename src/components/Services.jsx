@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaLaptopCode, FaChartLine, FaBrain, FaCloud, FaMobileAlt, FaDatabase } from 'react-icons/fa';
+import { FaLaptopCode, FaChartLine, FaBrain, FaCloud, FaMobileAlt, FaDatabase, FaCogs } from 'react-icons/fa';
 
 const servicesData = [
   {
@@ -10,29 +10,29 @@ const servicesData = [
     description: 'Building modern, responsive, and performant web applications using React, Node.js, and other cutting-edge technologies.',
   },
   {
+    icon: <FaCogs />,
+    title: 'Zoho Developer Services',
+    description: 'Specialized in Zoho ecosystem development - creating custom workflows, functions, blueprints, creator applications, and advanced SQL analytics to automate and streamline business processes.',
+  },
+  {
     icon: <FaChartLine />,
-    title: 'Data Analysis',
-    description: 'Transforming raw data into actionable insights using Python, SQL, and visualization tools like Power BI and Tableau.',
+    title: 'Data Analysis & Analytics',
+    description: 'Transforming raw data into actionable insights using Python, SQL, Zoho Analytics, and visualization tools like Power BI and Tableau.',
   },
   {
     icon: <FaBrain />,
     title: 'AI/ML Solutions',
-    description: 'Developing intelligent applications with machine learning, NLP, and computer vision capabilities.',
+    description: 'Developing intelligent applications with machine learning, NLP, and computer vision capabilities to solve complex business problems.',
   },
   {
     icon: <FaCloud />,
-    title: 'Cloud Services',
-    description: 'Deploying and managing scalable applications on cloud platforms like AWS, GCP, and Azure.',
-  },
-  {
-    icon: <FaMobileAlt />,
-    title: 'API Development',
-    description: 'Designing and building robust RESTful APIs and microservices for seamless application integration.',
+    title: 'Cloud & Integration Services',
+    description: 'Deploying and managing scalable applications on cloud platforms like AWS, GCP, and Azure with seamless integrations.',
   },
   {
     icon: <FaDatabase />,
-    title: 'Database Design',
-    description: 'Creating efficient database architectures with PostgreSQL, MongoDB, and other database systems.',
+    title: 'API & Database Design',
+    description: 'Designing efficient database architectures and building robust RESTful APIs for seamless application integration and data management.',
   },
 ];
 

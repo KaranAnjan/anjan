@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCode, FaDatabase, FaTools, FaBrain } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaTools, FaBrain, FaCogs } from 'react-icons/fa';
 
 const skillsData = {
   frontend: [
@@ -16,13 +16,21 @@ const skillsData = {
     { name: 'Express.js', level: 80 },
     { name: 'REST APIs', level: 85 },
   ],
+  zoho: [
+    { name: 'Zoho Functions (Deluge)', level: 92 },
+    { name: 'Workflow Automation', level: 90 },
+    { name: 'Zoho Creator', level: 88 },
+    { name: 'Zoho Analytics SQL', level: 85 },
+    { name: 'Blueprints & Layouts', level: 87 },
+    { name: 'Zoho CRM Customization', level: 89 },
+  ],
   dataAnalysis: [
     { name: 'Pandas', level: 90 },
     { name: 'NumPy', level: 85 },
-    { name: 'SQL', level: 88 },
+    { name: 'SQL', level: 92 },
     { name: 'Power BI', level: 78 },
   ],
-  tools: ['Git', 'Docker', 'VS Code', 'Jupyter', 'MongoDB', 'PostgreSQL', 'AWS', 'MSSQL'],
+  tools: ['Git', 'Docker', 'VS Code', 'Jupyter', 'MongoDB', 'PostgreSQL', 'AWS', 'Zoho CRM', 'MSSQL', 'Firebase'],
 };
 
 const Skills = () => {
@@ -102,6 +110,31 @@ const Skills = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
+            <h3><FaCogs className="icon" /> Zoho Developer</h3>
+            {skillsData.zoho.map((skill, index) => (
+              <div className="skill-item" key={index}>
+                <div className="skill-header">
+                  <span>{skill.name}</span>
+                  <span>{skill.level}%</span>
+                </div>
+                <div className="skill-bar">
+                  <motion.div 
+                    className="skill-progress"
+                    initial={{ width: 0 }}
+                    animate={inView ? { width: `${skill.level}%` } : {}}
+                    transition={{ duration: 1, delay: 0.2 + index * 0.1 }}
+                  />
+                </div>
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div 
+            className="skill-category"
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <h3><FaBrain className="icon" /> Data Analysis & AI</h3>
             {skillsData.dataAnalysis.map((skill, index) => (
               <div className="skill-item" key={index}>
@@ -125,7 +158,7 @@ const Skills = () => {
             className="skill-category"
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <h3><FaTools className="icon" /> Tools & Technologies</h3>
             <div className="tools-grid">

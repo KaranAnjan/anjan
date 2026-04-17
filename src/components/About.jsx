@@ -43,16 +43,17 @@ const About = () => {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3>A Passionate Developer & Data Analyst</h3>
+          <h3>Software Developer & CRM Solutions Architect</h3>
           <p>
-            Hi! I'm Anjan Karan, a recent graduate with a strong passion for technology 
-            and innovation. I specialize in full-stack web development and data analysis, 
-            combining these skills to build intelligent, data-driven applications.
+            Hi! I'm Anjan Karan, a dedicated software developer with a strong passion for building innovative 
+            solutions. I specialize in full-stack web development, data analysis, and enterprise CRM/automation 
+            solutions, combining these skills to create intelligent, scalable applications.
           </p>
           <p>
-            My journey in tech has led me to develop expertise in creating modern web 
-            applications, building AI-powered tools like my audio transcription system, 
-            and analyzing complex datasets to derive meaningful insights.
+            My expertise spans across web technologies (React, Node.js, Python) and the complete Zoho ecosystem where I design 
+            and develop Zoho functions, workflow automation, blueprints, custom creator applications, and advanced SQL analytics. 
+            I've also built AI-powered tools and transformed complex datasets into actionable insights. My mission is to deliver 
+            high-quality, production-ready solutions that drive business value.
           </p>
 
           <div className="about-info">

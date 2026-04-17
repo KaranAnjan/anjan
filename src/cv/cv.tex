@@ -1,0 +1,132 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% ModernCV Resume – One Page Optimized 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%---------------------------------------------------------------------------------------- 
+% STYLE 
+%---------------------------------------------------------------------------------------- 
+\moderncvstyle{banking} 
+\moderncvcolor{blue}
+
+%---------------------------------------------------------------------------------------- 
+% PAGE GEOMETRY 
+%---------------------------------------------------------------------------------------- 
+\usepackage[top=1cm,bottom=1.5cm,left=1.8cm,right=1.8cm]{geometry}
+
+%---------------------------------------------------------------------------------------- 
+% FONT & SPACING 
+%---------------------------------------------------------------------------------------- 
+\newlength{\makecvtitlenamewidth}
+\setlength{\makecvtitlenamewidth}{12cm} 
+\renewcommand*{\namefont}{\fontsize{20}{24}\mdseries\upshape} 
+\usepackage{etoolbox} 
+\patchcmd{\section}{\addvspace{2.5ex}}{\addvspace{1.2ex}}{}{}
+
+%---------------------------------------------------------------------------------------- 
+% PERSONAL INFORMATION 
+%---------------------------------------------------------------------------------------- 
+\firstname{Anjan} 
+\familyname{Karan} 
+\title{Software Developer} 
+\address{Kolkata, West Bengal}{India} 
+\mobile{+91 74074 37378} 
+\email{karananjan7@gmail.com} 
+
+
+%---------------------------------------------------------------------------------------- 
+\begin{document}
+
+\makecvtitle 
+\vspace{-3em}
+
+%---------------------------------------------------------------------------------------- 
+% SUMMARY 
+%---------------------------------------------------------------------------------------- 
+\section{Summary} 
+Full-Stack Software Developer and Zoho Specialist with expertise in building scalable web applications, business automation solutions, and data-driven systems. Proficient in CRM customization, workflow automation, Zoho Creator, advanced analytics, and modern web technologies. Proven track record in creating intelligent solutions that streamline operations and drive business value.
+
+%---------------------------------------------------------------------------------------- 
+% EXPERIENCE 
+%---------------------------------------------------------------------------------------- 
+\section{Experience}
+
+\cventry{Aug 2025--Present}{MIS Specialist, Zoho Developer}{\textsc{Vivre Panels Pvt. Ltd.}}{Kolkata}{}{ 
+\begin{itemize} 
+\item Developed advanced MIS and performance reports using SQL and Zoho Analytics to support business decision-making. 
+\item Built automated dashboards integrating multiple data sources, improving reporting accuracy and turnaround time. 
+\item Implemented AI-based call transcription solutions to convert multilingual Indian language calls into English for analysis and compliance. 
+\item Designed and deployed business applications using Zoho Creator, including custom forms, workflows, and automated approvals. 
+\item Created Zoho Functions (Deluge scripts) and workflow automation to reduce manual processes by 40\%. 
+\item Implemented Zoho Blueprints for structured data validation and business process automation. 
+\item Developed SQL-based Zoho Analytics reports for real-time performance tracking and KPI monitoring.
+\item Automated data flows across Zoho applications, reducing manual intervention and improving data consistency. 
+\end{itemize} 
+}
+
+\cventry{Feb 2025--Jul 2025}{MIS Analyst, Creative Developer}{\textsc{Primeeast Venture Pvt. Ltd.}}{Kolkata}{}{ 
+\begin{itemize} 
+\item Created and maintained interactive Power BI dashboards to deliver real-time insights, reducing reporting turnaround time by 25\%. 
+\item Designed fully automated Google Sheets solutions to track branch-wise daily sales in real time. 
+\item Developed custom scripts for process automation and data pipeline management.
+\end{itemize} 
+}
+
+\cventry{2022--2024}{Operation Analyst}{\textsc{Terralytics Analysis Pvt. Ltd.}}{Bangalore}{}{ 
+\begin{itemize} 
+\item Built and maintained Power BI dashboards, improving decision-making and reducing reporting time by 25\%. 
+\item Delivered performance insights to senior management, contributing to a 15\% increase in team productivity. 
+\item Implemented SQL queries for complex data analysis and reporting.
+\end{itemize} 
+}
+
+\cventry{2020--2022}{Operation Executive}{\textsc{Startek}}{Bangalore}{}{ 
+\begin{itemize} 
+\item Monitored and analyzed operational data for timely reporting and performance tracking. 
+\item Created Excel-based MIS reports to improve data visibility for leadership. 
+\end{itemize} 
+}
+
+%---------------------------------------------------------------------------------------- 
+% EDUCATION 
+%---------------------------------------------------------------------------------------- 
+\section{Education}
+
+\cventry{2020}{MBA -- Marketing \& Finance (Dual Specialization)}% 
+{Cambridge Institute of Technology, VTU University}{Bengaluru, KA}{}{}
+
+\cventry{2018}{Bachelor of Science (Hons) -- Mathematics}% 
+{Bajkul Milani Mahavidyalaya, Vidyasagar University}{West Bengal}{}{}
+
+%---------------------------------------------------------------------------------------- 
+% SKILLS 
+%---------------------------------------------------------------------------------------- 
+\section{Skills}
+
+\cvitem{Web Development}{React.js, Node.js, JavaScript, HTML/CSS, Full-Stack Applications} 
+\cvitem{Zoho Ecosystem}{Zoho Creator, Zoho Functions (Deluge), Workflows, Blueprints, Zoho Analytics, Zoho CRM Customization} 
+\cvitem{Data \& Analytics}{Zoho Analytics, SQL, Power BI, Advanced Excel, Google Sheets, Pandas, NumPy} 
+\cvitem{Programming Languages}{Python, JavaScript, SQL} 
+\cvitem{Databases}{PostgreSQL, MongoDB, MSSQL} 
+\cvitem{Tools \& Technologies}{Git, Docker, VS Code, Jupyter, AWS, Firebase, Framer Motion} 
+\cvitem{AI / ML}{Speech-to-Text Automation, NLP, Data Analysis, Python-based solutions}
+
+%---------------------------------------------------------------------------------------- 
+% CERTIFICATIONS 
+%---------------------------------------------------------------------------------------- 
+\section{Courses \& Certifications}
+
+\cvitem{2023}{Data Analysis – Google} 
+\cvitem{2023}{System Administration and IT Infrastructure Services – Google}
+\cvitem{2024}{Full-Stack Web Development (Self-Taught)}
+\cvitem{2024}{Zoho Developer Specialization}
+
+%---------------------------------------------------------------------------------------- 
+% LANGUAGES 
+%---------------------------------------------------------------------------------------- 
+\section{Languages}
+
+\cvitem{}{Bengali (Mother Tongue), English (Professional Proficiency), Hindi (Conversational)}
+
+%---------------------------------------------------------------------------------------- 
+\end{document}

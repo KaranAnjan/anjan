@@ -1,11 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaArrowRight } from 'react-icons/fa';
 import { SiReact, SiPython, SiJavascript, SiMongodb } from 'react-icons/si';
 import anjanImg from '../Assets/ANJAN.jpeg';
+import { cvData } from '../data/cvData';
+import { generateCVPDF } from '../utils/generatePDF';
 
 const Hero = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const downloadCV = () => {
+    generateCVPDF(cvData);
+  };
+
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
@@ -28,26 +40,13 @@ const Hero = () => {
             <span>Anjan Karan</span>
           </h1>
           <div className="tagline">
-            <TypeAnimation
-              sequence={[
-                'Full Stack Developer',
-                2000,
-                'Data Analyst',
-                2000,
-                'AI/ML Enthusiast',
-                2000,
-                'Problem Solver',
-                2000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <span>Software Developer</span>
           </div>
           <p className="description">
-            A passionate developer and data analyst with expertise in building 
-            innovative web applications and AI-powered solutions. Turning complex 
-            problems into simple, beautiful solutions.
+            A full-stack software developer with expertise in web applications, data analysis,
+            and CRM/automation solutions. Specialized in Zoho ecosystem development including workflows,
+            functions, custom creator apps, and advanced analytics. Turning complex problems into elegant,
+            scalable solutions.
           </p>
 
           <div className="hero-buttons">
@@ -55,6 +54,7 @@ const Hero = () => {
               className="btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={downloadCV}
             >
               <FaDownload /> Download CV
             </motion.button>
@@ -62,6 +62,7 @@ const Hero = () => {
               className="btn-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={scrollToProjects}
             >
               View Projects <FaArrowRight />
             </motion.button>
@@ -100,6 +101,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          whileHover={{ scale: 1.05 }}
         >
           <div className="hero-image-container">
             <div className="image-wrapper">

@@ -1,5 +1,5 @@
 {
-  "name": "anjan-portfolio",
+  "name": "anjan-karan",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -14,7 +14,9 @@
     "framer-motion": "^10.16.4",
     "react-icons": "^4.12.0",
     "react-type-animation": "^3.2.0",
-    "react-intersection-observer": "^9.5.3"
+    "react-intersection-observer": "^9.5.3",
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
