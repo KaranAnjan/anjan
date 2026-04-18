@@ -30,7 +30,7 @@ export const cvData = {
       ],
     },
     {
-      position: 'MIS Analyst, Creative Developer',
+      position: 'Zoho Developer',
       company: 'Primeeast Venture Pvt. Ltd.',
       location: 'Kolkata',
       startDate: 'Feb 2025',
