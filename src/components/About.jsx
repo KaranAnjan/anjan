@@ -43,7 +43,7 @@ const About = () => {
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h3>Software Developer & CRM Solutions Architect</h3>
+          <h3>Software Developer | Zoho Developer</h3>
           <p>
             Hi! I'm Anjan Karan, a dedicated software developer with a strong passion for building innovative 
             solutions. I specialize in full-stack web development, data analysis, and enterprise CRM/automation 

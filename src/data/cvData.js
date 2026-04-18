@@ -5,18 +5,18 @@ export const cvData = {
   personal: {
     name: 'Anjan',
     lastName: 'Karan',
-    title: 'Software Developer | Zoho Developer',
+    title: 'Software Developer',
     address: 'Kolkata, West Bengal',
     country: 'India',
     phone: '+91 74074 37378',
     email: 'karananjan7@gmail.com',
   },
   
-  summary: `Software Developer with progressive experience transitioning from MIS and data analysis into application development and automation. Skilled in Python, SQL, Zoho Creator (Deluge), and React-based frontend development. Experienced in building end-to-end systems including backend workflows, APIs, MSSQL databases, and AI-powered automation solutions.`,
+  summary: `Full-Stack Software Developer and Zoho Specialist with expertise in building scalable web applications, business automation solutions, and data-driven systems. Proficient in CRM customization, workflow automation, Zoho Creator, advanced analytics, and modern web technologies. Proven track record in creating intelligent solutions that streamline operations and drive business value.`,
 
   experience: [
     {
-      position: 'Software Developer / Zoho Developer',
+      position: 'Software Developer | Zoho Developer',
       company: 'Vivre Panels Pvt. Ltd.',
       location: 'Kolkata',
       startDate: 'Aug 2025',
@@ -30,41 +30,38 @@ export const cvData = {
       ],
     },
     {
-      position: 'Zoho Developer',
+      position: 'MIS Analyst, Creative Developer',
       company: 'Primeeast Venture Pvt. Ltd.',
       location: 'Kolkata',
       startDate: 'Feb 2025',
       endDate: 'Jul 2025',
       responsibilities: [
         'Developed Zoho Creator apps with custom forms, workflows, and automation.',
-        'Built reporting dashboards and automated pipelines using Power BI and Google Sheets.',
+        'Built reporting dashboards and automated pipelines using Zoho Analytics and Google Sheets.',
         'Implemented backend logic and data validation using Deluge scripting.',
-        'Improved reporting efficiency by 25% through automation.',
       ],
     },
     {
-      position: 'Data Analyst → Zoho Developer',
+      position: 'Operation Analyst',
       company: 'Terralytics Analysis Pvt. Ltd.',
       location: 'Bangalore',
       startDate: '2022',
       endDate: '2024',
       responsibilities: [
-        'Transitioned into development by building internal automation tools and applications.',
-        'Developed SQL-based data models and optimized large-scale queries.',
-        'Created dashboards and automated reporting systems.',
-        'Contributed to process automation using scripting and low-code platforms.',
+        'Built and maintained Power BI dashboards, improving decision-making and reducing reporting time by 25%.',
+        'Delivered performance insights to senior management, contributing to a 15% increase in team productivity.',
+        'Implemented SQL queries for complex data analysis and reporting.',
       ],
     },
     {
-      position: 'MIS Executive (Automation Focus)',
+      position: 'Operation Executive',
       company: 'Startek',
       location: 'Bangalore',
       startDate: '2020',
       endDate: '2022',
       responsibilities: [
-        'Built Excel-based automation tools and reporting systems.',
-        'Introduced process automation and data handling improvements.',
-        'Gained foundation in data workflows and system logic.',
+        'Monitored and analyzed operational data for timely reporting and performance tracking.',
+        'Created Excel-based MIS reports to improve data visibility for leadership.',
       ],
     },
   ],
@@ -87,36 +84,14 @@ export const cvData = {
   ],
 
   skills: {
-    languages: ['Python', 'SQL', 'Deluge', 'Go'],
-    frontend: ['React (Basic)', 'HTML', 'CSS'],
-    database: ['MSSQL', 'Stored Procedures'],
-    tools: ['Zoho Creator', 'Zoho Analytics', 'Power BI'],
-    concepts: ['API Integration', 'Automation', 'Data Modeling'],
-    other: ['AI Integration', 'Speech-to-Text'],
+    webDevelopment: ['React.js', 'Node.js', 'JavaScript', 'HTML/CSS', 'Full-Stack Applications'],
+    zohoEcosystem: ['Zoho Creator', 'Zoho Functions (Deluge)', 'Workflows', 'Blueprints', 'Zoho Analytics', 'Zoho CRM Customization'],
+    dataAnalytics: ['Zoho Analytics', 'SQL', 'Power BI', 'Advanced Excel', 'Google Sheets', 'Pandas', 'NumPy'],
+    programming: ['Python', 'JavaScript', 'SQL', 'Deluge','GO'],
+    databases: ['PostgreSQL', 'MongoDB', 'MSSQL', 'Supabase'],
+    tools: ['Git', 'Docker', 'VS Code', 'Jupyter', 'AWS', 'Firebase', 'Framer Motion'],
+    aiML: ['Speech-to-Text Automation', 'NLP', 'Data Analysis', 'GenAI Tools'],
   },
-
-  projects: [
-    {
-      title: 'AI Sales Call Intelligence System',
-      description: 'Built an end-to-end system for call transcription, summarization, and analytics using AI, Zoho Creator, and MSSQL.',
-      highlights: [
-        'Developed custom app with workflows, approvals, and role-based access.',
-        'Integrated speech-to-text for multilingual call transcription.',
-        'Implemented automated summaries and insight extraction.',
-        'Designed MSSQL database with stored procedures for processing.',
-        'Built frontend components using React and HTML for interaction.',
-      ],
-    },
-    {
-      title: 'Business Automation Apps',
-      description: 'Developed multiple Zoho Creator applications to digitize and automate operations.',
-      highlights: [
-        'Implemented workflows, APIs, and cross-platform integrations.',
-        'Automated approvals, notifications, and reporting pipelines.',
-        'Improved efficiency and reduced manual effort significantly.',
-      ],
-    },
-  ],
 
   certifications: [
     { title: 'Data Analysis', issuer: 'Google', year: '2023' },
